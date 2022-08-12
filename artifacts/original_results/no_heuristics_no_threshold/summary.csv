@@ -1,0 +1,6 @@
+Dataset,Size Schema,Config,Size ITE,Ratio ITE,#Constraints,Runtime
+MapGermany,405,threshold-0,941,0.697,44,7.278937339782715
+MapEU,359,threshold-0,274,0.43,10,13.471957921981812
+WorldGenBerlin,1339,threshold-0,23804,0.947,1243,10876.891826152802
+USHouseMembers,493,threshold-0,14361,0.967,719,103.24516654014587
+WildlifeSites,143,threshold-0,6841,0.979,360,51.497443437576294

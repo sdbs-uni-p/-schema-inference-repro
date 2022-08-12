@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+authors:
+- family-names: "Klessinger"
+  given-names: "Stefan"
+- family-names: "Klettke"
+  given-names: "Meike"
+- family-names: "Störl"
+  given-names: "Uta"
+- family-names: "Scherzinger"
+  given-names: "Stefanie"
+title: "Extracting JSON Schemas with Tagged Unions"
+doi: 10.5281/zenodo.1234
+date-released: 2017-12-18
+url: "https://github.com/github/linguist"
+preferred-citation:
+  type: conference-paper
+  authors:
+  - family-names: "Klessinger"
+    given-names: "Stefan"
+  - family-names: "Klettke"
+    given-names: "Meike"
+  - family-names: "Störl"
+    given-names: "Uta"
+  - family-names: "Scherzinger"
+    given-names: "Stefanie"
+  doi: "10.0000/00000"
+  journal: "DEco@VLDB '22"
+  month: 8
+  title: "Extracting JSON Schemas with Tagged Unions"
+  year: 2022
