@@ -8,6 +8,38 @@ It is provided as a Docker container.
 
 Our original results are available in directory [original_results](artifacts/original_results).
 
+=======
+## Citation
+To refer to this reproduction package in a publication, please use this BibTeX entry.
+
+```BibTeX
+@software{KlessingerTagger2022,
+  author    = {Stefan Klessinger and
+              Meike Klettke and
+              Uta St{\"{o}}rl and
+              Stefanie Scherzinger},
+  doi       = {10.5281/zenodo.6985648},
+  month     = {8},
+  title     = {{"Extracting JSON Schemas with Tagged Unions", Reproduction Package}},
+  url       = {https://github.com/sdbs-uni-p/schema-inference-repro},
+  year      = {2022}
+  booktitle = {Proc.\ DEco@VLDB 2022}
+}
+``` 
+To refer to the article this reproduction package is provided for, please use the following  BibTeX entry:
+
+```BibTeX
+@inproceedings{Klessinger:2022:JSONTaggedUnions,
+  author    = {Stefan Klessinger and
+               Meike Klettke and
+               Uta St{\"{o}}rl and
+               Stefanie Scherzinger},
+  title     = {Extracting JSON Schemas with Tagged Unions},
+  year      = {2022}
+  booktitle = {Proc.\ DEco@VLDB 2022}
+}
+```
+
 ## Setting up the Docker container
 To set up the Docker container, clone this repository with 
 ``git clone https://github.com/sdbs-uni-p/schema-inference-repro.git``. 

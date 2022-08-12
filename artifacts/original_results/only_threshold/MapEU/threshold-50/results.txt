@@ -2,8 +2,8 @@ Lines in Schema without if-then-else:	 359
 Lines in Schema with if-then-else:		 532 (173 additional lines)
 
 Runtime: 4.550877332687378s
-If-then-else Relations found: 6
+CFDs found: 6
 
-Schema validation passed
-JSON validation passed
+Validation of produced schema against JSON Schema Draft 7 passed
+Validation of input JSON document against produced JSON Schema passed
 
