@@ -82,3 +82,4 @@ You can also install additional software you might want for inspecting the resul
 ## Moving Output to the Host System
 All results are stored at ``/home/repro/results`` in the container. To copy the results to the host system, use ``docker cp <name>:/home/repro/results .``, replacing name with the name specified in the ``docker run`` command (see above). If you have not specified a name, use the container ID (which can be obtained with ``docker ps``) instead.
 
+Binary images for x86-64 and ARM64 architecutres are provided on [Zenodo](https://doi.org/10.5281/zenodo.6985648). To load them, execute ``docker load -i <filename>``.
