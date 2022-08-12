@@ -1,14 +1,13 @@
 # Extracting JSON Schemas with Tagged Unions - Reproduction Package
 
 This is a reproduction package for the article *Extracting JSON Schemas with Tagged Unions*
-by Stefan Klessinger, Meike Klettke, Uta Störl and Stefanie Scherzinger.
+by Stefan Klessinger, Meike Klettke, Uta Störl and Stefanie Scherzinger (DEco@VLDB 2022).
 
 This reproduction package was built by Stefan Klessinger.
 It is provided as a Docker container.
 
 Our original results are available in directory [original_results](artifacts/original_results).
 
-=======
 ## Citation
 To refer to this reproduction package in a publication, please use this BibTeX entry.
 
@@ -26,8 +25,8 @@ To refer to this reproduction package in a publication, please use this BibTeX e
   booktitle = {Proc.\ DEco@VLDB 2022}
 }
 ``` 
-To refer to the article this reproduction package is provided for, please use the following  BibTeX entry:
 
+To refer to the article this reproduction package is provided for, please use the following  BibTeX entry:
 ```BibTeX
 @inproceedings{Klessinger:2022:JSONTaggedUnions,
   author    = {Stefan Klessinger and
@@ -61,13 +60,13 @@ The respective licenses are included in the subdirectories.
 
 ## Running experiments
 The configuration files for the three experiments we performed are located in [implementation/config](artifacts/implementation/config):
-* Heuristics and threshold: Process the files with heuristics enabled at three different thresholds (15%, 35% and 50%).
-* Only threshold: Process the files without any heuristics except the thresholds (again, 15%, 35% and 50%).
-* No heuristics no threshold: Process the files without any heuristics or thresholds (i.e., threshold of 0%).
+* [heuristics_and_threshold.json](artifacts/implementation/config/heuristics_and_threshold.json): Process the files with heuristics enabled at three different thresholds (15%, 35% and 50%).
+* [only_threshold.json](artifacts/implementation/config/only_threshold.json): Process the files without thresholds enabled (again, 15%, 35% and 50%) and other heuristics disabled.
+* [no_heuristics_no_threshold.json](artifacts/implementation/config/no_heuristics_no_threshold.json): Process the files without any heuristics or thresholds (i.e., threshold of 0%).
 
 * To execute the experiments, run ``./run_experiments.sh <config>`` inside the container. ``<config>`` determines the type of experiments to run and must be replaced with one of the following values:
-  * ``default`` executes the experiments with heuristics and thresholds
-  * ``only_threshold`` executes the experiments without heuristics except thresholds
+  * ``default`` executes the experiments with heuristics including thresholds
+  * ``only_threshold`` executes the experiments with thresholds enabled and other heuristics disabled
   * ``none`` executes the experiments without any heuristics or thresholds
   * ``all`` executes all of the above configurations.
 
@@ -78,7 +77,7 @@ An overview of the results for each experiment is provided as ``summary.csv`` in
 
 ```diff -y original_results/heuristics_and_threshold_default/summary.csv results/heuristics_and_threshold_default/summary.csv```
 
-You can also install additional software you might want for inspecting the results (e.g., your favourite text editor) using ``sudo apt-get``. The password of user ``repro`` is ``repro`` 
+You can also install additional software you might want for inspecting the results (e.g., your favorite text editor) using ``sudo apt-get``. The password of user ``repro`` is ``repro`` 
 
 ## Moving Output to the Host System
 All results are stored at ``/home/repro/results`` in the container. To copy the results to the host system, use ``docker cp <name>:/home/repro/results .``, replacing name with the name specified in the ``docker run`` command (see above). If you have not specified a name, use the container ID (which can be obtained with ``docker ps``) instead.

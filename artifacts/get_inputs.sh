@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# Download and overwrite inputs from source for end-to-end reproducibility. 
+# Keep local version in case the original source is not available.
+
 date=$(date '+%Y-%m-%d')
 if [[ `wget -S --spider https://github.com/wija/follow/raw/5efbd3de9e81b78e7aa7e4b164ee0fe5e4c885fa/maps/Germany.json  2>&1 | grep 'HTTP/1.1 200 OK'` ]]; then
     wget -q https://github.com/wija/follow/raw/5efbd3de9e81b78e7aa7e4b164ee0fe5e4c885fa/maps/Germany.json -O input/wija/wija_Germany.json \
